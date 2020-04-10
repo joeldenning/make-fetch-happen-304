@@ -1,0 +1,25 @@
+{
+  "name": "make-fetch-happen-304",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -n w: npm:start:*",
+    "start:server": "node 304-web-server.js",
+    "start:make-fetch-happen": "node bug-demonstration.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeldenning/make-fetch-happen-304.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeldenning/make-fetch-happen-304/issues"
+  },
+  "homepage": "https://github.com/joeldenning/make-fetch-happen-304#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "make-fetch-happen": "^8.0.4"
+  }
+}
